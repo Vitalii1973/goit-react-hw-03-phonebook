@@ -10,6 +10,7 @@ class Filter extends Component {
           Filter contacts by name:
           <input
             type="text"
+            name="name"
             value={name}
             onChange={e => onChange(e.target.value)}
           />

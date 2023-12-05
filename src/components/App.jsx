@@ -52,7 +52,10 @@ class App extends Component {
   };
 
   isContactExist = name => {
-    return this.state.contacts.some(contact => contact.name === name);
+    const nameLowerCase = name.toLowerCase();
+    return this.state.contacts.some(
+      contact => contact.name.toLowerCase() === nameLowerCase
+    );
   };
 
   render() {
